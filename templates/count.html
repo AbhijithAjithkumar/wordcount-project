@@ -1,0 +1,14 @@
+
+<h1>The text contains {{words}} words</h1>
+<h1>Your text</h1>
+  {{fulltext}}
+<h2>Word count information: </h2>
+
+{% for word,total in wordcount %}
+
+{{ word }}
+<br/>
+{{ total }}
+<br/>
+
+{% endfor %}
